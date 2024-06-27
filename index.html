@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0px;
+    }
+    .fixed{
+        background-color:white;
+        width: 100%;
+        padding: 14px;
+        font-size: larger;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        position:fixed;
+        top: 0px;
+        z-index: 1; 
+        
+    }
+    .fixed ul{
+        list-style-type:none;
+        display: flex;
+    }
+    .fixed a{
+        text-decoration: none;
+        padding: 16px;
+        margin-left: 25px;
+        transition: 0.5s;
+    }
+    a:hover{
+        background-color: rgb(166, 197, 224);
+    }
+    
+    .container{
+        position: relative;
+    }
+    .child{
+       color: black;
+        position:absolute;
+        font-size:x-large;
+        top: 50%;
+        left: 45%;
+    }
+    .projects{
+        color: black;
+        position: static;
+    }
+    .img{
+        position: relative;
+        margin: 5px;
+        
+    }
+    .text{
+        background-color: black;
+        color: aliceblue;
+        width:120px;
+        padding: 15px;
+        position:absolute;
+        top: 0px;
+        text-align: center;
+        }
+        .card_container{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding: 15px;
+        }
+        .responsive{
+            justify-content: center;
+            padding: 15px;
+        }
+        .card_response{
+            border: 0px solid black;
+            display: flex;
+        }
+        .cards{
+            width: 300px;
+            margin: 5px;
+        }
+       .profesion{
+        padding-top: 5px;
+        padding-bottom: 5px;
+       }
+       .deadline{
+        padding-top: 5px;
+        padding-bottom: 5px;
+       }
+       .dead{
+        width: 300px;
+        border: 0;
+        padding: 10px;
+       }
+       .description{
+        width: 100%;
+        padding: 5px;
+        margin: 5px;
+        }
+        .form-control{
+        width: 97%;
+        padding: 10px;
+        margin: 5px;
+        }
+        .button-controls{
+            width: 150px;
+            background-color: black;
+            color: white;
+            border-radius: 10%;
+            cursor: pointer;
+            padding: 10px;
+             }
+             .trafic-image{
+                width: 100%;
+                padding: 10px;
+             }
+             .span{
+                background-color: rgb(18, 17, 17);
+                padding: 20px;
+                opacity: 0.5;
+                color: aliceblue;
+
+             }
+</style>
+<body>
+    <nav class="fixed">
+      <h1>B R Architects</h1>
+      <ul>
+        <li><a href="">Projects</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+     </nav>    
+
+     <div class="container">
+     <img src="https://www.w3schools.com/w3images/architect.jpg" width="1250" height="600">
+     <h1 class="child"><span>BR</span> Architects</h1>
+     </div>
+
+     <div class="projects">
+     <h1>Projects</h1><hr>
+     </div>
+<div class="card_container">
+     <div class="img">
+        <p><img src="https://www.w3schools.com/w3images/house5.jpg" width="280" height="200"></p>
+        <div class="text">
+            <p>Summer House</p>
+        </div>
+     </div>
+     <div class="img">
+        <p><img src="https://www.w3schools.com/w3images/house2.jpg" width="280" height="200"></p>
+        <div class="text">
+            <p>Brick House</p>
+        </div>
+     </div>
+     <div class="img">
+        <p><img src="https://www.w3schools.com/w3images/house3.jpg" width="280" height="200"></p>
+        <div class="text">
+            <p>Renovated</p>
+        </div>
+     </div>
+     <div class="img">
+        <p><img src="https://www.w3schools.com/w3images/house4.jpg" width="280" height="200"></p>
+        <div class="text">
+            <p>Barn House</p>
+        </div>
+     </div>
+</div>
+<div class="card_container">
+    <div class="img">
+        <p><img src="https://www.w3schools.com/w3images/house2.jpg" width="280" height="200"></p>
+        <div class="text">
+            <p>Summer House</p>
+        </div>
+     </div>
+     <div class="img">
+        <p><img src="https://www.w3schools.com/w3images/house5.jpg" width="280" height="200"></p>
+        <div class="text">
+            <p>Brick House</p>
+        </div>
+     </div>
+     <div class="img">
+        <p><img src="https://www.w3schools.com/w3images/house4.jpg" width="280" height="200"></p>
+        <div class="text">
+            <p>Renovated</p>
+        </div>
+     </div>
+     <div class="img">
+        <p><img src="https://www.w3schools.com/w3images/house3.jpg" width="280" height="200"></p>
+        <div class="text">
+            <p>Barn House</p>
+        </div>
+     </div>
+</div>
+
+<div class="responsive">
+    <h1>About</h1><hr>
+    <br>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate maxime beatae, neque atque tenetur nisi rerum ipsum, corrupti illum nostrum cumque est deserunt repudiandae! Adipisci quia sit fuga maxime reiciendis.
+Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore repudiandae autem perferendis vel natus numquam dolorum minus atque, ex reprehenderit cupiditate dolores consectetur quidem? Alias labore animi tempora voluptas dolorum.
+
+    </p>
+</div>
+
+<div class="card_response">
+    <div class="cards">
+        <img src="https://www.w3schools.com/w3images/team2.jpg" width="300">
+        <div >
+            <h1 class="profesion">Jhon doe</h1><br>
+
+            <p>
+            CEO & FOUNDER
+            </p>
+          <p class="deadline">
+            Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum
+         </p>
+         <button class="dead">CONTACT</button>
+      </div>
+     </div>
+     
+
+     
+        <div class="cards">
+            <img src="https://www.w3schools.com/w3images/team1.jpg" width="300">
+            <div >
+                <h1 class="profesion">Jhon doe</h1><br>
+    
+                <p>
+                    Architect
+                </p>
+              <p class="deadline">
+                Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum
+             </p>
+             <button class="dead">CONTACT</button>
+          </div>
+         </div>
+         
+
+
+        
+            <div class="cards">
+                <img src="https://www.w3schools.com/w3images/team3.jpg" width="300">
+                <div >
+                    <h1 class="profesion">Mike Ross</h1><br>
+        
+                    <p>
+                        Architect
+                    </p>
+                  <p class="deadline">
+                    Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum
+                 </p>
+                 <button class="dead">CONTACT</button>
+              </div>
+             </div>
+             
+
+
+             
+                <div class="cards">
+                    <img src="https://www.w3schools.com/w3images/team4.jpg" width="300">
+                    <div >
+                        <h1 class="profesion">Dan Star</h1><br>
+            
+                        <p>
+                            Architect
+                        </p>
+                      <p class="deadline">
+                        Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum
+                     </p>
+                     <button class="dead">CONTACT</button>
+                  </div>
+                </div>
+        </div>
+
+
+
+
+        <div  class="description">
+            <h1>Contact</h1><hr>
+            <br>
+            <p>Lets get in touch and talk about your next project.</p><br>
+
+            <form controls>
+
+                <input class="form-control" for="text" name="Name" placeholder="Name"><br>
+
+                <input  class="form-control" for="text" name="email" placeholder="Email" ><br>
+
+                <input  class="form-control" for="text" name="Subject" placeholder="Subject"><br>
+
+                <input  class="form-control" for="text" name="Comment" placeholder="Comment" ><br>
+
+                <br>
+                <button class="button-controls">SEND MESSAGE</button>
+            </form>
+        </div>
+
+
+
+        <div>
+            <img class="trafic-image" src="https://www.w3schools.com/w3images/map.jpg">
+
+        </div>
+</body>
+</html>
